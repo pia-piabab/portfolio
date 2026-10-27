@@ -1,0 +1,66 @@
+body{
+
+      background-color: #c9cdd4;
+      font-family:Arial, san-serif;
+      text-align:center;
+}
+
+h1{
+     
+      font-size:25px;
+      margin-bottom:30px;
+}
+div{
+
+      width:250px;
+      border:2px solid black;
+      padding:20px;
+      margin:20px auto;
+      text-align:left;
+}
+
+.card1{
+      background-color:pink;
+      border:2px solid hotpink;
+      
+}
+
+.card2{
+      background-color:#badb9e;
+      border:2px solid darkgreen;
+}
+
+.card3{
+      background-color:cyan;
+      border:2px solid darkcyan;
+}
+
+.card4{
+      background-color: beige;
+      border:2px solid rosybrown;
+}
+
+.name{
+      font-size:16px;
+}
+
+.major{
+       font-size:16px;
+}
+
+
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4936c9;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #ff6584;
+    transform: translateX(-5px);
+}

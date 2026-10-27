@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Teacher's Day 💐</title>
+
+    <link rel="stylesheet" href="teacher.css">
+</head>
+
+<body>
+    
+
+    <!-- Background Music -->
+    <audio id="music" loop>
+        <source src="Ebe Dancel - Bawat Daan (Official Music Video) (1).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Decorations -->
+    <div class="decorations">
+        <span>🌸</span>
+        <span>💗</span>
+        <span>🌷</span>
+        <span>✨</span>
+        <span>💐</span>
+        <span>💕</span>
+        <span>🌸</span>
+    </div>
+
+    <!-- Music Button -->
+    <button class="music-btn" onclick="toggleMusic()">
+        🎵 Music
+    </button>
+
+    <main>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+
+            <div class="flower">🌷</div>
+
+            <h1>Happy Teacher's Day!</h1>
+
+            <p>
+                A special message for our amazing teachers
+            </p>
+
+            <button class="open-btn" onclick="openLetter()">
+                💌 Open My Letter
+            </button>
+
+        </section>
+
+
+        <!-- Letter -->
+        <section class="letter" id="letter">
+
+            <div class="letter-content">
+
+                <h2>Dear Teacher,</h2>
+
+                <p>
+                    Thank you for your patience, kindness, and
+                    dedication in teaching us every day.
+                </p>
+
+                <p>
+                    You inspire us to learn, improve ourselves,
+                    and never give up even when things are difficult.
+                </p>
+
+                <p>
+                    We are grateful for all the lessons, advice,
+                    and memories that you have shared with us.
+                </p>
+
+                <h3>
+                    Thank you for being an amazing teacher! 💐
+                </h3>
+
+                <p class="signature">
+                    With love and gratitude,<br>
+                    <b>Your Students ❤️</b>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Photo Section -->
+        <section class="photos">
+
+            <h2>Our Wonderful Teachers 📸</h2>
+
+            <p class="subtitle">
+                Thank you for all the memories!
+            </p>
+
+
+                <div class="photo-card">
+                    <img src="received_2086971568601108.jpeg" alt="Teacher 2">
+                    <h3>Our Inspiring Teacher</h3>
+                    <p>Thank you for believing in us.</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="received_322779160356814.jpeg" alt="Teacher 3">
+                    <h3>Our Wonderful Teacher</h3>
+                    <p>Thank you for your kindness.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final Message -->
+        <section class="final">
+
+            <div class="big-flower">
+                💐
+            </div>
+
+            <h1>Happy Teacher's Day!</h1>
+
+            <p>
+                You don't just teach lessons.
+                <br>
+                You inspire dreams. ❤️
+            </p>
+
+            <div class="stars">
+                ✨ 🌸 ✨ 🌷 ✨
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        // Open letter
+        function openLetter() {
+
+            document.getElementById("letter").classList.add("show");
+
+            document.getElementById("letter").scrollIntoView({
+                behavior: "smooth"
+            });
+
+            // Start music
+            document.getElementById("music").play();
+        }
+
+
+        // Music control
+        function toggleMusic() {
+
+            const music = document.getElementById("music");
+
+            if (music.paused) {
+
+                music.play();
+
+            } else {
+
+                music.pause();
+
+            }
+        }
+
+    </script>
+   
+<a href="index.html" class="back-btn">← Back</a>
+
+</body>
+</html>

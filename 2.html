@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS BOX MODEL</title>
+    <title>My Multimedia Page</title>
+    <link rel="stylesheet" href="2.css">
+
+    <style>
+        body {
+            font-family: georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: rgb(91, 19, 19);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid brown;
+        }
+
+        .container {
+            background-color: rgb(142, 28, 28);
+            margin: 10px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* IMAGE SECTION */
+        .images {
+            display: flex;
+            gap: 40px;
+            overflow-x: auto;
+        }
+
+        .images img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid rgb(82, 22, 22);
+            border-radius: 15px;
+        }
+
+        /* MUSIC SECTION */
+        .music {
+            text-align: center;
+        }
+
+        .song {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .song p {
+            font-size: 12px;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        /* VIDEO SECTION */
+        .video-section {
+            margin: 20px;
+        }
+
+        .video-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-bottom: 15px;
+        }
+
+        .video p {
+            font-size: 12px;
+        }
+
+        video {
+            width: 150px;
+            height: 180px;
+            background-color: #222;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid rgb(82, 22, 22);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Multimedia Page</h1>
+
+    <hr>
+
+    <!-- FAVORITE IMAGE -->
+    <div class="container">
+
+        <h2>My Favorite Image</h2>
+
+        <div class="images">
+            <img src="cat1.png">
+            <img src="cat2.png">
+            <img src="pira.png">
+            <img src="cat3.png">
+            <img src="image.png">
+        </div>
+
+    </div>
+
+
+    <!-- MUSIC LIST -->
+    <div class="container music">
+
+        <h2>Music List</h2>
+
+        <div class="song">
+            <p>1. Bawat Daan</p>
+            <audio controls>
+                <source src="Ebe Dancel - Bawat Daan (Official Music Video) (1).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song">
+            <p> Ripples by beaba</p>
+            <audio controls>
+                <source src="Download.mp4" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song">
+            <p>...
+            </p>
+            <audio controls>
+                <source src="mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song">
+            <p>...</p>
+            <audio controls>
+                <source src="ocean-&-engines.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song">
+            <p>...</p>
+            <audio controls>
+                <source src="oceans.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+
+
+    <!-- VIDEO -->
+    <div class="container video-section">
+
+        <h2>Video</h2>
+
+        <div class="video">
+            <p>My cat</p>
+            <video controls>
+                <source src="catt.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video">
+            <p>CAT</p>
+            <video controls>
+                <source src="cattt.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video">
+            <p>Birthday Video</p>
+            <video controls>
+                <source src="bday.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video">
+            <p>Graduation Video</p>
+            <video controls>
+                <source src="grad.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video">
+            <p>Friends</p>
+            <video controls>
+                <source src="cof.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+    
+    
+<a href="index.html" class="back-btn">← Back</a>
+
+</body>
+</html>
